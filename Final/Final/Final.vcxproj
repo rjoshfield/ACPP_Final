@@ -36,11 +36,11 @@
   <ItemGroup>
     <ClCompile Include="Assessment.cpp" />
     <ClCompile Include="AssessUnit.cpp" />
-    <ClCompile Include="CGame.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="ContactInfo.cpp" />
-    <ClCompile Include="CQuestion.cpp" />
-    <ClCompile Include="CQuiz.cpp" />
-    <ClCompile Include="CStudent.cpp" />
+    <ClCompile Include="Question.cpp" />
+    <ClCompile Include="Quiz.cpp" />
+    <ClCompile Include="Student.cpp" />
     <ClCompile Include="JeopardyGame.cpp" />
     <ClCompile Include="JeopardyGameBoardForm.cpp" />
     <ClCompile Include="JeopardyGameSettingForm.cpp" />
