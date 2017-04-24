@@ -5,7 +5,7 @@
 #include "JeopardyGameSettingForm.h"
 #include "CAssessment.h"
 
-namespace EduGame {
+namespace Final {
 
 	using namespace System;
 	using namespace msclr::interop;

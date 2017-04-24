@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by EduGame.rc
+// Used by Final.rc
 //
 #define IDR_IMAGE1                      101
 

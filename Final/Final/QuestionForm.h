@@ -3,7 +3,7 @@
 #include "CAssessment.h"
 #include "JeopardyGameBoardForm.h"
 #include <msclr\marshal_cppstd.h>
-namespace EduGame {
+namespace {
 
 	using namespace System;
 	using namespace msclr::interop;

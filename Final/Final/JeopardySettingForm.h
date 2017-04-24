@@ -6,7 +6,7 @@
 #include <msclr\marshal_cppstd.h>
 #include "JeopardyBoardForm.h"
 #include "JeopardyGame.h"
-namespace EduGame {
+namespace Final {
 
 	using namespace System;
 	using namespace msclr::interop;

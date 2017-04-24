@@ -3,7 +3,7 @@
 #include "CAssessment.h"
 #include "JeopardyGame.h"
 
-namespace EduGame {
+namespace Final {
 
 	using namespace System;
 	using namespace System::ComponentModel;

@@ -3,7 +3,7 @@
 #include "Question.h"
 #include "Quiz.h"
 #include <string>
-using namespace EduGame;
+using namespace Final;
 using namespace std;
 [STAThread]
 
