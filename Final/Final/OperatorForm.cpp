@@ -1,7 +1,7 @@
 #include "OperatorForm.h"
-#include "CStudent.h"
-#include "CQuestion.h"
-#include "CQuiz.h"
+#include "Student.h"
+#include "Question.h"
+#include "Quiz.h"
 #include <string>
 using namespace EduGame;
 using namespace std;
@@ -11,10 +11,10 @@ void main() {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	CStudent * student = new CStudent("Carlos", "12");
-	student->setContact(new CContactInfo("Sunset", "111111111", "magic@mdc.edu"));
+	Student * student = new Student("Carlos", "12");
+	student->setContact(new ContactInfo("Sunset", "111111111", "magic@mdc.edu"));
 	
-	CQuestion *questions = new CQuestion[6];
+	Question *questions = new Question[6];
 	for (int i = 0; i < 6; i++) {
 		questions[i].setTitle("Question " + std::to_string(i));
 		questions[i].setPoints(10);
@@ -24,7 +24,7 @@ void main() {
 		questions[i].setAnswer("B");
 		questions[i].setExplanation("B is correct");
 	}
-	CQuiz * quiz = new CQuiz();
+	Quiz * quiz = new Quiz();
 	for (int i = 0; i < 6; i++) {
 		quiz->addQuestion(questions[i]);
 	}
