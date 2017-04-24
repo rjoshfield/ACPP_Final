@@ -23,8 +23,10 @@
     <ClInclude Include="AssessUnit.h" />
     <ClInclude Include="ContactInfo.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="JeopardyBoardForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="JeopardyGame.h" />
-    <ClInclude Include="JeopardyGameBoardForm.h" />
     <ClInclude Include="JeopardySettingForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -40,12 +42,11 @@
     <ClCompile Include="AssessUnit.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="ContactInfo.cpp" />
+    <ClCompile Include="JeopardyBoardForm.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="Quiz.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="JeopardyGame.cpp" />
-    <ClCompile Include="JeopardyGameBoardForm.cpp" />
-    <ClCompile Include="JeopardyGameSettingForm.cpp" />
     <ClCompile Include="JeopardySettingForm.cpp" />
     <ClCompile Include="OperatorForm.cpp" />
     <ClCompile Include="QuestionForm.cpp" />

@@ -30,9 +30,6 @@
     <ClInclude Include="JeopardyGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="JeopardyGameBoardForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="OperatorForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -54,6 +51,9 @@
     <ClInclude Include="JeopardySettingForm.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="JeopardyBoardForm.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Assessment.cpp">
@@ -66,12 +66,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="JeopardyGame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="JeopardyGameBoardForm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="JeopardyGameSettingForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="OperatorForm.cpp">
@@ -93,6 +87,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="JeopardySettingForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JeopardyBoardForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

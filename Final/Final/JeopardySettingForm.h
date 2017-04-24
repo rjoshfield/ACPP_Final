@@ -1,8 +1,10 @@
+/*Need to change other file names*/
+
 #pragma once
 #include "CQuiz.h"
 #include "CStudent.h"
 #include <msclr\marshal_cppstd.h>
-#include "JeopardyGameBoardForm.h"
+#include "JeopardyBoardForm.h"
 #include "JeopardyGame.h"
 namespace EduGame {
 
@@ -15,12 +17,12 @@ namespace EduGame {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for JeopardyGameSettingForm
+	/// Summary for JeopardySettingForm
 	/// </summary>
-	public ref class JeopardyGameSettingForm : public System::Windows::Forms::Form
+	public ref class JeopardySettingForm : public System::Windows::Forms::Form
 	{
 	public:
-		JeopardyGameSettingForm(CStudent *stu, CQuiz *quiz)
+		JeopardySettingForm(CStudent *stu, CQuiz *quiz)
 		{
 			InitializeComponent();
 
@@ -32,7 +34,7 @@ namespace EduGame {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~JeopardyGameSettingForm()
+		~JeopardySettingForm()
 		{
 			if (components)
 			{
@@ -117,7 +119,7 @@ namespace EduGame {
 				 this->btnCancel->TabIndex = 9;
 				 this->btnCancel->Text = L"Clear";
 				 this->btnCancel->UseVisualStyleBackColor = true;
-				 this->btnCancel->Click += gcnew System::EventHandler(this, &JeopardyGameSettingForm::btnCancel_Click);
+				 this->btnCancel->Click += gcnew System::EventHandler(this, &JeopardySettingForm::btnCancel_Click);
 				 // 
 				 // btnOk
 				 // 
@@ -127,7 +129,7 @@ namespace EduGame {
 				 this->btnOk->TabIndex = 8;
 				 this->btnOk->Text = L"Next";
 				 this->btnOk->UseVisualStyleBackColor = true;
-				 this->btnOk->Click += gcnew System::EventHandler(this, &JeopardyGameSettingForm::btnOk_Click);
+				 this->btnOk->Click += gcnew System::EventHandler(this, &JeopardySettingForm::btnOk_Click);
 				 // 
 				 // lblColHeadings
 				 // 
@@ -147,7 +149,7 @@ namespace EduGame {
 				 this->txtColHeadings->Size = System::Drawing::Size(551, 150);
 				 this->txtColHeadings->TabIndex = 11;
 				 // 
-				 // JeopardyGameSettingForm
+				 // JeopardySettingForm
 				 // 
 				 this->AutoScaleDimensions = System::Drawing::SizeF(22, 42);
 				 this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -161,10 +163,10 @@ namespace EduGame {
 				 this->Controls->Add(this->lblCols);
 				 this->Controls->Add(this->txtRows);
 				 this->Controls->Add(this->lblRows);
-				 this->Name = L"JeopardyGameSettingForm";
+				 this->Name = L"JeopardySettingForm";
 				 this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-				 this->Text = L"JeopardyGameSettingForm";
-				 this->Load += gcnew System::EventHandler(this, &JeopardyGameSettingForm::JeopardyGameSettingForm_Load);
+				 this->Text = L"JeopardySettingForm";
+				 this->Load += gcnew System::EventHandler(this, &JeopardySettingForm::JeopardySettingForm_Load);
 				 this->ResumeLayout(false);
 				 this->PerformLayout();
 
@@ -188,13 +190,13 @@ namespace EduGame {
 		JeopardyGame *gameObj = new JeopardyGame(this->quiz, 1, 3, iRows, iCols, strColHeadings);
 		// Create an instance of gameboard and show the game board up
 
-		JeopardyGameBoardForm^ gameBoard = gcnew JeopardyGameBoardForm(gameObj, this->stu);
+		JeopardyBoardForm^ gameBoard = gcnew JeopardyBoardForm(gameObj, this->stu);
 		gameBoard->Visible = true;
 		this->Visible = false;
 		gameBoard->Show();
 
 	}
-	private: System::Void JeopardyGameSettingForm_Load(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void JeopardySettingForm_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
 	};
 }
