@@ -1,8 +1,8 @@
 /*Need to change other file names*/
 
 #pragma once
-#include "CQuiz.h"
-#include "CStudent.h"
+#include "Quiz.h"
+#include "Student.h"
 #include <msclr\marshal_cppstd.h>
 #include "JeopardyBoardForm.h"
 #include "JeopardyGame.h"
@@ -22,7 +22,7 @@ namespace Final {
 	public ref class JeopardySettingForm : public System::Windows::Forms::Form
 	{
 	public:
-		JeopardySettingForm(CStudent *stu, CQuiz *quiz)
+		JeopardySettingForm(Student *stu, Quiz *quiz)
 		{
 			InitializeComponent();
 
@@ -50,8 +50,8 @@ namespace Final {
 	private: System::Windows::Forms::Button^  btnOk;
 
 	private:
-		CStudent * stu;
-		CQuiz * quiz;
+		Student * stu;
+		Quiz * quiz;
 	private: System::Windows::Forms::Label^  lblColHeadings;
 	private: System::Windows::Forms::TextBox^  txtColHeadings;
 

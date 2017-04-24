@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CAssessment.h"
+#include "Assessment.h"
 #include "JeopardyGameBoardForm.h"
 #include <msclr\marshal_cppstd.h>
 namespace {
@@ -21,7 +21,7 @@ namespace {
 	public:
 		QuestionForm(bool isStaff, 
 			JeopardyGame * gameObj, 
-			CAssessment *stuAssess)
+			Assessment *stuAssess)
 		{
 			this->isStaff = isStaff;
 			this->gameObj = gameObj;
@@ -63,7 +63,7 @@ namespace {
 	private:
 		bool isStaff;
 		JeopardyGame * gameObj;
-		CAssessment *stuAssess;
+		Assessment *stuAssess;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>

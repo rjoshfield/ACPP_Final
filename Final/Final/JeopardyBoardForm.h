@@ -1,6 +1,6 @@
 #pragma once
-#include "CStudent.h"
-#include "CAssessment.h"
+#include "Student.h"
+#include "Assessment.h"
 #include "JeopardyGame.h"
 
 namespace Final {
@@ -18,7 +18,7 @@ namespace Final {
 	public ref class JeopardyBoardForm : public System::Windows::Forms::Form
 	{
 	public:
-		JeopardyBoardForm(JeopardyGame *gameObj, CStudent *stu)
+		JeopardyBoardForm(JeopardyGame *gameObj, Student *stu)
 		{ //For staff --> edit game and preview the game play
 			this->gameObj = gameObj;
 			this->stu = stu;
@@ -31,7 +31,7 @@ namespace Final {
 		}
 
 		// Another constructure should hold the assessment
-		JeopardyBoardForm(JeopardyGame *gameObj, CAssessment *stuAssess)
+		JeopardyBoardForm(JeopardyGame *gameObj, Assessment *stuAssess)
 		{ //For student --> play and perform assessment statistics
 			this->gameObj = gameObj;
 			this->stu = stu;
@@ -60,10 +60,10 @@ namespace Final {
 	private: System::Windows::Forms::TableLayoutPanel^  tableLayoutPanel1;
 
 	private:
-		CStudent * stu;
+		Student * stu;
 		JeopardyGame * gameObj;
 		bool isStaff;
-		CAssessment * stuAssess;
+		Assessment * stuAssess;
 		cli::array<Button ^, 2>^ buttons;
 		/// <summary>
 		/// Required designer variable.

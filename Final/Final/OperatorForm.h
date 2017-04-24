@@ -1,9 +1,9 @@
 #pragma once
 
-#include "CStudent.h"
+#include "Student.h"
 #include <msclr\marshal_cppstd.h>
 #include "JeopardyGameSettingForm.h"
-#include "CAssessment.h"
+#include "Assessment.h"
 
 namespace Final {
 
@@ -22,7 +22,7 @@ namespace Final {
 	public ref class OperatorForm : public System::Windows::Forms::Form
 	{
 	public:
-		OperatorForm(CStudent *pStu)
+		OperatorForm(Student *pStu)
 		{
 			InitializeComponent();
 			stuObj = pStu;
@@ -30,7 +30,7 @@ namespace Final {
 			this->txtID->Text = (gcnew String(pStu->getID().c_str()));
 		}
 
-		OperatorForm(CStudent *pStu, CQuiz *quiz)
+		OperatorForm(Student *pStu, Quiz *quiz)
 		{
 			InitializeComponent();
 			stuObj = pStu;
@@ -62,9 +62,9 @@ namespace Final {
 	private: System::Windows::Forms::Label^  lblMsg;
 
 	private:
-		CStudent * stuObj;
-		CQuiz * quiz;
-		CAssessment * stuAssess;
+		Student * stuObj;
+		Quiz * quiz;
+		Assessment * stuAssess;
 
 		JeopardyGameSettingForm^ game;
 	private: System::Windows::Forms::PictureBox^  picTag;
@@ -335,7 +335,7 @@ namespace Final {
 
 		//
 		if (this->chlstRole->SelectedIndex == 0) {
-			this->stuAssess = new CAssessment(this->stuObj);
+			this->stuAssess = new Assessment(this->stuObj);
 
 			// Hard coding TODO ????
 			JeopardyGame *gameObj = new JeopardyGame(this->quiz, 1, 3,
