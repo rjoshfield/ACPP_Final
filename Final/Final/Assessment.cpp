@@ -42,4 +42,3 @@ Student * Assessment::getStudent() {
 void Assessment::setStudent(Student * student) {
 	this->student = student;
 }
-
